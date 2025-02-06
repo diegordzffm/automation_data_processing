@@ -1,0 +1,38 @@
+#follow guide
+https://playwright.dev/python/docs/intro
+
+
+
+1. pip install pytest-playwright
+2. playwright install
+#Install the required browsers:
+
+3. run test in terminal
+pytest
+
+4. Test generator
+codegen
+
+5. playwright codegen --color-scheme=dark playwright.dev
+
+
+playwright codegen demo.playwright.dev/todomvc
+
+
+
+
+
+user guide
+
+The import re statement in Python brings in the re module, which provides powerful functionalities for working with regular expressions. These regular expressions are patterns that help you match, search, and manipulate text data in Python.
+
+useful libraries
+    beautifulsoup4
+    import re
+    equirements.txt
+    sched python
+
+shortcuts or import tricks
+    *highlight all the lines that you want to unindent and press shift+tab
+    * Alt+LeftClick to create a vertical cursor at the beginning of the text and hit the Backspace key once. You can use this to type text on multiple lines, delete text from      
+        multiple lines, and to create rectangular Copy/Paste selections.
