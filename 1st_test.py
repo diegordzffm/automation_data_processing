@@ -28,9 +28,9 @@ def run(playwright: Playwright) -> None:
     page = context.new_page()
     page.goto("https://adatamanagement.be/")
     page.get_by_placeholder("Enter your email address").click()
-    page.get_by_placeholder("Enter your email address").fill("admin@regnology.net")
+    page.get_by_placeholder("Enter your email address").fill("datamanagement.net")
     page.get_by_placeholder("Enter your password").click()
-    page.get_by_placeholder("Enter your password").fill("Admin@admin123")
+    page.get_by_placeholder("Enter your password").fill("datamanagement")
     #page.get_by_role("button", name="Log In").click()
     #page.locator("a").filter(has_text="Data Lake").first.click()
 
