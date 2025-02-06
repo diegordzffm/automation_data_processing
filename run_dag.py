@@ -1,12 +1,12 @@
-username = "diego.rodriguez@regnology.net"
-password = "Frankfurt#60486"
+username = "datamanagementDiego.net"
+password = "Fxxxxxxx86"
 
 
 import requests
 from datetime import datetime
 
 # Airflow server URL
-airflow_url = "https://acceptance.b-fine.be/airflow/tree?dag_id=ANACREDIT-ICR_BECRIS-ICR-NEW"
+airflow_url = "https://datamanagementDiego/airflow/tree?dag_id=AdatamanagementDiego"
 
 # Current date
 current_date = datetime.now().strftime('%Y-%m-%d')

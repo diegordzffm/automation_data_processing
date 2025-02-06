@@ -61,11 +61,11 @@ async def main():
 
     # Open the first URL in the first context (tab)
     page1 = await context1.new_page()
-    await page1.goto("https://acceptance.b-fine.be/connect/login")
+    await page1.goto("https://dxxxxxxxxxxxxxxxxxxxxdxxxxxxxxxxxxxxxxxxxe/connect/login")
 
     # Open the second URL in the second context (tab)
     page2 = await context2.new_page()
-    await page2.goto("https://acceptance.b-fine.be/dataManagement/ingestionValidation")
+    await page2.goto("https:/dxxxxxxxxxxxxxxxxxxxe/dataManagement/ingestionValidation")
 
     # You can now interact with each page independently using page1 and page2 objects
 
@@ -92,18 +92,18 @@ with sync_playwright() as p:
 
   # Open the first URL in a new tab
   page1 = context.new_page()
-  page1.goto("https://acceptance.b-fine.be/connect/login")
+  page1.goto("https://dxxxxxxxxxxxxxxxxxxx/connect/login")
 
   # Open the second URL in another new tab
   #page2 = context.new_page()
-  #page2.goto("https://acceptance.b-fine.be/dataManagement/ingestionValidation")
+  #page2.goto("https://dxxxxxxxxxxxxxxxxxxx.be/dataManagement/ingestionValidation")
 
  # Check if only one tab is open (initial tab + newly opened ingestionValidation tab)
   # This ensures the login URL is opened in a new tab only after the first tab opens
   if len(context.pages) == 2:
     # Open the login URL in a new tab
     page2 = context.new_page()
-    page2.goto("https://acceptance.b-fine.be/dataManagement/ingestionValidation")
+    page2.goto("https://adxxxxxxxxxxxxxxxxxxx/dataManagement/ingestionValidation")
   else:
     print("Unexpected number of tabs open. Script requires opening the login URL in a new tab after the initial ingestionValidation tab opens.")
 

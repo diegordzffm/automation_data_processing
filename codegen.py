@@ -1,4 +1,4 @@
-https://acceptance.b-fine.be/dataManagement
+https://datamanagementDiego/dataManagement
 
 
 import re
@@ -10,16 +10,16 @@ def run(playwright: Playwright) -> None: #function named run that takes a single
     browser = playwright.chromium.launch(headless=False)
     context = browser.new_context()
     page = context.new_page()
-    page.goto("https://acceptance.b-fine.be/dataManagement")
-    page.goto("https://acceptance.b-fine.be/dataManagement/ingestionValidation")
-    page.goto("https://acceptance.b-fine.be/")
-    page.goto("https://acceptance.b-fine.be/connect/login")
+    page.goto("https://datamanagementDiego/dataManagement")
+    page.goto("https://datamanagementDiego/dataManagement/ingestionValidation")
+    page.goto("https://datamanagementDiego/")
+    page.goto("https://datamanagementDiego/connect/login")
     page.get_by_placeholder("Enter your email address").click()
     page.get_by_placeholder("Enter your email address").click()
-    page.get_by_placeholder("Enter your email address").fill("admin@regnology.net")
+    page.get_by_placeholder("Enter your email address").fill("datamanagementDiego.net")
     page.get_by_placeholder("Enter your password").click()
     page.get_by_placeholder("Enter your password").click(modifiers=["ControlOrMeta"])
-    page.get_by_placeholder("Enter your password").fill("Admin@admin123")
+    page.get_by_placeholder("Enter your password").fill("AdatamanagementDiego")
     page.get_by_role("button", name="Log In").click()
     page.locator("a").filter(has_text="Data Lake").first.click()
     page.get_by_role("button", name="Add file").click()
@@ -41,7 +41,7 @@ def run(playwright: Playwright) -> None: #function named run that takes a single
     with page.expect_popup() as page1_info:
         page.get_by_role("link", name="ANACREDIT_RL-INGESTION-NEW").click()
     page1 = page1_info.value
-    page1.goto("https://acceptance.b-fine.be/airflow/graph?dag_id=ANACREDIT_RL-INGESTION-NEW&run_id=manual__2024-05-23T12%3A20%3A53.080217%2B00%3A00&execution_date=2024-05-23T12%3A20%3A53.080Z")
+    page1.goto("https://datamanagementDiego/airflow/graph?dag_id=ANACREDIT_RL-INGESTION-NEW&run_id=manual__2024-05-23T12%3A20%3A53.080217%2B00%3A00&execution_date=2024-05-23T12%3A20%3A53.080Z")
     page1.get_by_role("link", name="Tree").click()
     page1.close()
     page.get_by_label("Delete").click()
@@ -53,7 +53,7 @@ def run(playwright: Playwright) -> None: #function named run that takes a single
     page.locator("div:nth-child(7) > .c332w-4012 > .css-b62m3t-container > .css-1vup00y-control > .css-i9ymxl > .css-8r5rw9").click()
     page.locator("#createReport div").filter(has_text="New reportRegulatory").first.click()
     page.get_by_role("button", name="Create from workflow").click()
-    page.get_by_role("row", name="Select Regnology Reporting Hub ECB B-Fine AnaCredit Belgium, Becris Full S S S 1 M 2 Calendar day 1").get_by_role("button").click()
+    page.get_by_role("row", name="Select Full S S S 1 M 2 Calendar day 1").get_by_role("button").click()
     page.locator(".c332w-3914 > div > .iconSvg > div > .icon > path").first.click()
     page.get_by_role("menu").get_by_text("Diego Rodriguez").click()
     page.get_by_role("img").nth(2).click()

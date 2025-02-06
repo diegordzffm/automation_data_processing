@@ -23,15 +23,15 @@ with sync_playwright() as p:
 
   context = browser.new_context()
   page1 = context.new_page()
-  page1.goto("https://acceptance.b-fine.be/connect/login")
+  page1.goto("https://datamanagementDiego/connect/login")
 
   if len(context.pages) == 1:
     # Open the login URL in a new tab
     page2 = context.new_page()
-    page2.goto("https://acceptance.b-fine.be/dataManagement/ingestionValidation")
-    page2.get_by_placeholder("Enter your email address").fill("admin@regnology.net")
+    page2.goto("https://datamanagementDiego/dataManagement/ingestionValidation")
+    page2.get_by_placeholder("Enter your email address").fill("datamanagementDiego")
     page2.get_by_placeholder("Enter your password").click()
-    page2.get_by_placeholder("Enter your password").fill("Admin@admin123")
+    page2.get_by_placeholder("Enter your password").fill("datamanagementDiego")
     page2.get_by_role("button", name="Log In").click()
     page2.locator("a").filter(has_text="Data Lake").first.click()
     page2.get_by_role("button", name="Add file").click()
@@ -51,13 +51,13 @@ def open_urls_with_condition(url1, url2):
     try:
       page1.goto(url1)
       print(f"Opened page 1: {url1}")
-      page1.goto("https://acceptance.b-fine.be/connect/login")
+      page1.goto("https://datamanagementDiego/connect/login")
       page1.get_by_placeholder("Enter your email address").click()
       page1.get_by_placeholder("Enter your email address").click()
-      page1.get_by_placeholder("Enter your email address").fill("admin@regnology.net")
+      page1.get_by_placeholder("Enter your email address").fill("datamanagementDiego")
       page1.get_by_placeholder("Enter your password").click()
       page1.get_by_placeholder("Enter your password").click(modifiers=["ControlOrMeta"])
-      page1.get_by_placeholder("Enter your password").fill("Admin@admin123")
+      page1.get_by_placeholder("Enter your password").fill("datamanagementDiego")
       page1.get_by_role("button", name="Log In").click()
     except Exception as e:
       print(f"Error opening page 1: {e}")
@@ -77,8 +77,8 @@ def open_urls_with_condition(url1, url2):
     browser.close()
 
 # Replace with your actual URLs
-url1 = "https://acceptance.b-fine.be/connect/login"
-url2 = "https://acceptance.b-fine.be/dataManagement/ingestionValidation"
+url1 = "https://datamanagementDiego/connect/login"
+url2 = "https://datamanagementDiego/dataManagement/ingestionValidation"
 open_urls_with_condition(url1, url2)
 '''
 
@@ -90,15 +90,15 @@ with sync_playwright() as p:
   browser = p.chromium.launch(headless=False)  # Set headless to False for visual debugging
 
   page1 = browser.new_page()
-  page1.goto("https://acceptance.b-fine.be/connect/login")
-  page1.goto("https://acceptance.b-fine.be/")
-    page.goto("https://acceptance.b-fine.be/connect/login")
+  page1.goto("https://datamanagementDiego/connect/login")
+  page1.goto("https://datamanagementDiego/")
+    page.goto("https://datamanagementDiego/connect/login")
     page.get_by_placeholder("Enter your email address").click()
     page.get_by_placeholder("Enter your email address").click()
-    page.get_by_placeholder("Enter your email address").fill("admin@regnology.net")
+    page.get_by_placeholder("Enter your email address").fill("datamanagementDiego")
     page.get_by_placeholder("Enter your password").click()
     page.get_by_placeholder("Enter your password").click(modifiers=["ControlOrMeta"])
-    page.get_by_placeholder("Enter your password").fill("Admin@admin123")
+    page.get_by_placeholder("Enter your password").fill("datamanagementDiego")
     page.get_by_role("button", name="Log In").click()
 
   # Wait for login page to load (modify selector as needed)
@@ -110,8 +110,8 @@ with sync_playwright() as p:
     # Open the second URL in a new tab within the same page (context) 
   else:
     page2 = browser.new_page(context=page1.context)
-    page2.goto("https://acceptance.b-fine.be/dataManagement/ingestionValidation")
-    print("Opened https://acceptance.b-fine.be/dataManagement/ingestionValidation in a new tab")
+    page2.goto("https://datamanagementDiego/dataManagement/ingestionValidation")
+    print("Opened https://datamanagementDiego/dataManagement/ingestionValidation in a new tab")
     print("Login page failed to load or title mismatch")
 
   # Add a pause to see the opened tabs (optional)

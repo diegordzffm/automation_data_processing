@@ -2,10 +2,10 @@ import requests
 from playwright.sync_api import sync_playwright
 
 # Step 1: Perform login with credentials
-login_url = "https://acceptance.b-fine.be/connect/login"
+login_url = "https://datamanagementDiego/connect/login"
 credentials = {
-    "username": "diego.rodriguez@regnology.net",
-  	"password": "Frankfurt#60486"
+    "username": "datamanagementDiego.net",
+  	"password": "datamanagementDiego"
 }
 
 # Send a POST request to login
@@ -22,7 +22,7 @@ with requests.Session() as session:
         exit()
 
 # Step 2: Open the dashboard with Playwright using the same session
-dashboard_url = "https://acceptance.b-fine.be/app/dashboard"
+dashboard_url = "https://datamanagementDiego/app/dashboard"
 
 def open_dashboard():
     with sync_playwright() as p:
@@ -34,7 +34,7 @@ def open_dashboard():
             context.add_cookies([{
                 'name': cookie,
                 'value': cookies[cookie],
-                'domain': '.acceptance.b-fine.be',
+                'domain': '.datamanagementDiego',
                 'path': '/',
                 'httpOnly': True,
                 'secure': True
@@ -60,11 +60,11 @@ open_dashboard()
 from requests.auth import HTTPBasicAuth
 
 # Server URL
-url = "https://acceptance.b-fine.be/connect/login"
+url = "https://datamanagementDiego/connect/login"
 
 # Credentials
-username = "diego.rodriguez@regnology.net"
-password = "Frankfurt#60486"
+username = "datamanagementDiego.net"
+password = "datamanagementDiego"
 
 # Send a GET request with basic authentication
 response = requests.get(url, auth=HTTPBasicAuth(username, password))
@@ -74,4 +74,4 @@ if response.status_code == 200:
     print("Access was successful!")
 else:
     print(f"Failed to access the server. Status code: {response.status_code}")
-https://acceptance.b-fine.be/app/dashboard'''
+https://datamanagementDiego/app/dashboard'''

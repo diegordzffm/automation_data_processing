@@ -6,11 +6,11 @@ import urllib3
 import subprocess
 import json
 
-JIRA_URL = "https://jira.regnology.net/rest/api/2/search"
-JIRA_EMAIL = "diego.rodriguez@regnology.net"
-JIRA_USERNAME = "DiegoFFM"
-JIRA_PASSWORD = "kim#60486"
-JIRA_API_TOKEN = "NzUwMTI4MTg4OTYzOiZFffdb7Zvdc/0RCgjUs06zPuyv"
+JIRA_URL = "https://jira.dxxxxxxxxxxxxxxxxxxx.net/rest/api/2/search"
+JIRA_EMAIL = "ddxxxxxxxxxxxxxxxxxxx"
+JIRA_USERNAME = "dxxxxxxxxxxxxxxxxxxx"
+JIRA_PASSWORD = "dxxxxxxxxxxxxxxxxxxx#dxxxxxxxxxxxxxxxxxxx"
+JIRA_API_TOKEN = "dxxxxxxxxxxxxxxxxxxx/dxxxxxxxxxxxxxxxxxxx"
 
 try:
     jira = JIRA(JIRA_URL, auth = HTTPBasicAuth(jira_username, JIRA_API_TOKEN))
@@ -33,10 +33,10 @@ def get_jira_issue_title(issue_key):
     """
 
     # Replace with your JIRA base URL, email, and API token
-    jira_base_url = "https://jira.regnology.net/rest/api/2"
-    email = "diego.rodriguez@regnology.net"
-    api_token = "NzUwMTI4MTg4OTYzOiZFffdb7Zvdc/0RCgjUs06zPuyv"
-    PROJECT_KEY = "RRH"
+    jira_base_url = "https://dxxxxxxxxxxxxxxxxxxx.dxxxxxxxxxxxxxxxxxxx.net/rest/api/2"
+    email = "dxxxxxxxxxxxxxxxxxxx"
+    api_token = "dxxxxxxxxxxxxxxxxxxx/dxxxxxxxxxxxxxxxxxxx"
+    PROJECT_KEY = "dxxxxxxxxxxxxxxxxxxx"
 
     # Construct the authentication header
     auth = HTTPBasicAuth(email, api_token)
@@ -65,5 +65,5 @@ print(title)'''
 
 curl -u username:password -X GET -H "Content-Type: application/json" http://localhost:8080/rest/api/2/issue/createmeta
 
-curl -u DiegoFFM:OTI3MzM4MjU5MzcyOq7jc8xGcgQXJsLYs6N8y66i7ESq https://jira.regnology.net/rest/api/2/search
+curl -u D7ESq htth
 '''

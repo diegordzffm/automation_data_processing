@@ -7,13 +7,13 @@ from jira import JIRA
 import urllib3
 
 def JiraBoard():
-  JIRA_URL = "https://jira.regnology.net/rest/api/2/issue/RRH-7614"
-  JIRA_EMAIL = "diego.rodriguez@regnology.net"
+  JIRA_URL = "https:datamanagementDiego/rest/api/2/issue/xxxx-7614"
+  JIRA_EMAIL = "datamanagementDiego.net"
   #username = "DiegoFFM"
-  #api_token = "OTI3MzM4MjU5MzcyOq7jc8xGcgQXJsLYs6N8y66i7ESq"
-  #JIRA_PASSWORD = "kim#60486"
+  #api_token = "OTIssdsdsdsdsdi7ESq"
+  #JIRA_PASSWORD = "ksddssdsdsdsd86"
   username = diego.rodriguez
-  JIRA_API_TOKEN = "NzUwMTI4MTg4OTYzOiZFffdb7Zvdc/0RCgjUs06zPuyv"
+  JIRA_API_TOKEN = "NzUwMssdsdsdUs06zPuyv"
 #PROJECT_KEY = "RRH"
 #REPOSITORY_NAME = "BECRIS_ICR"  # The name of the Test Repository
   session = requests.Session()

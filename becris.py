@@ -5,7 +5,7 @@ from playwright.sync_api import Page, expect
 def test_has_title(page: Page):
     page.goto("https://playwright.dev/")
 
-    # Expect a title "to contain" a substring.
+    # Expect a title "to contain" a substring.s
     expect(page).to_have_title(re.compile("Playwright"))
 
 def test_get_started_link(page: Page):
@@ -27,9 +27,9 @@ def run(playwright: Playwright) -> None:
     browser = playwright.chromium.launch(headless=False)#can be used in headless mode, with true
     context = browser.new_context() #a browser contest is an isolated incognito-alike session within a browser instance
     page = context.new_page()
-    page.goto("https://acceptance.b-fine.be/")
+    page.goto("https://datamanagementDiego/")
     page.get_by_placeholder("Enter your email address").click()
-    page.get_by_placeholder("Enter your email address").fill("admin@regnology.net")
+    page.get_by_placeholder("Enter your email address").fill("datamanagementDiego.net")
     page.get_by_placeholder("Enter your password").click()
     page.get_by_placeholder("Enter your password").fill("Admin@admin123")
     #page.get_by_role("button", name="Log In").click()
@@ -61,23 +61,23 @@ async def becris():
   context = browser.new_context()
   # Open the first URL in a new tab
   page = await context.new_page()
-  page.goto("https://acceptance.b-fine.be/connect/login")
+  page.goto("https://datamanagementDiego/connect/login")
   page.get_by_placeholder("Enter your email address").click()
-  page.get_by_placeholder("Enter your email address").fill("admin@regnology.net")
+  page.get_by_placeholder("Enter your email address").fill("datamanagementDiego.net")
   page.get_by_placeholder("Enter your password").click()
   page.get_by_placeholder("Enter your password").click(modifiers=["ControlOrMeta"])
-  page.get_by_placeholder("Enter your password").fill("Admin@admin123")
+  page.get_by_placeholder("Enter your password").fill("admin@datamanagementDiego")
   page.get_by_role("button", name="Log In").click()
   # Open the second URL in another new tab
   page2 = context.new_page()
-  page2.goto("https://acceptance.b-fine.be/dataManagement/ingestionValidation")
+  page2.goto("https://datamanagementDiego/dataManagement/ingestionValidation")
  
  # Check if only one tab is open (initial tab + newly opened ingestionValidation tab)
   # This ensures the login URL is opened in a new tab only after the first tab opens
   '''if len(context.pages) == 2:
     # Open the login URL in a new tab
     page2 = context.new_page()
-    page2.goto("https://acceptance.b-fine.be/dataManagement/ingestionValidation")
+    page2.goto("https://datamanagementDiego/dataManagement/ingestionValidation")
   else:
     print("Unexpected number of tabs open. Script requires opening the login URL in a new tab after the initial ingestionValidation tab opens.")
 '''

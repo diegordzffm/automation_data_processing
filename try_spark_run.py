@@ -2,7 +2,7 @@ import subprocess
 import json
 
 # Airflow API endpoint
-airflow_url = "https://acceptance.b-fine.be/airflow/api/v1/dags/spark_submit_example/dagRuns"
+airflow_url = "https://datamanagementDiego/airflow/api/v1/dags/spark_submit_example/dagRuns"
 
 # Define the parameters for your SparkSubmitOperator task
 task_name = "your_task_name"
@@ -21,8 +21,7 @@ runtime = None
 bucket = "s3bucket"
 jar_version = Variable.get('JAR_VERSION')
 module_id = 6600
-list_dev = ["dev", "playground", "acceptance", "staging", "presales"]
-conf_path = "spark/app/ingestion/conf/anacredit-ckp/"
+
 
 
 

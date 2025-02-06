@@ -3,9 +3,9 @@ import json
 from fpdf import FPDF
 
 # JIRA API Credentials
-JIRA_URL = "https://jira.regnology.net/"
-JIRA_EMAIL = "diego.rodriguez@regnology.net"
-JIRA_API_TOKEN = "NzUwMTI4MTg4OTYzOiZFffdb7Zvdc/0RCgjUs06zPuyv"
+JIRA_URL = "datamanagementDiego/"
+JIRA_EMAIL = "datamanagementDiego.net"
+JIRA_API_TOKEN = "NzUsdsasddssdsdsds06zPuyv"
 PROJECT_KEY = "RRH"
 REPOSITORY_NAME = "BECRIS_ICR"  # The name of the Test Repository
 
@@ -63,7 +63,7 @@ else:
         pdf.output(pdf_filename)
         print(f"Saved: {pdf_filename}")
 
-"https://jira.regnology.net/rest/api/2/project/16204","id":"16204","key":"RRH","name":"Regnology Reporting Hub"
+"datamanagementDiego/rest/api/2/project/16204","id":"16204","key":"RRH","name":"Regnology Reporting Hub"
 
 '''
 

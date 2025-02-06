@@ -1,19 +1,19 @@
 import requests
 import subprocess
 
-airflow_server_url = "https://acceptance.b-fine.be/airflow"
+airflow_server_url = "https://datamanagementDiego/airflow"
 dag_id = "ANACREDIT_RL-INGESTION-NEW-CREDIT-INSTITUTIONS"
-username = "diego.rodriguez@regnology.net"
-password = "Frankfurt#60486"
+username = "datamanagementDiego.net"
+password = "Fccxccxxx6"
 #CURL Command: This command triggers the DAG using Airflow's REST API. It uses basic authentication, so you need to provide your username and password
 curl_command = [
     "curl", "-X", "POST",
     f"{airflow_server_url}/api/v1/dags/{dag_id}/dagRuns",
     "-u", f"{username}:{password}",
     "-H", "Content-Type: application/json",
-    "-d", '{"conf": {"email": "diego.rodriguez@regnology.net", "entity": "B-Fine", "lot": 1, "reporting_date": "2024-12-11","source_system": "Manual"}}'  # Optional: Use {"conf":{}} to pass additional configurations to your DAG
+    "-d", '{"conf": {"email": "datamanagementDiego.net", "entity": "Bxxxxa", "lot": 1, "reporting_date": "2024-12-11","source_system": "Manual"}}'  # Optional: Use {"conf":{}} to pass additional configurations to your DAG
 ]
-#https://acceptance.b-fine.be/airflow/api/v1/dags/ANACREDIT-ICR_BECRIS-ICR-NEW/dagRuns
+#https://datamanagementDiego/airflow/api/v1/dags/ANACREDIT-ICR_BECRIS-ICR-NEW/dagRuns
 #Run the Command: The subprocess.run function executes the CURL command. It captures the output and any potential errors, which are then printed.
 try:
     result = subprocess.run(curl_command, capture_output=True, text=True)
@@ -25,30 +25,30 @@ except Exception as e:
     print("An error occurred:", str(e))
 
 
-#curl -X GET "https://acceptance.b-fine.be/airflow/api/v1/dags" \
-#-H "Authorization: Basic $(echo -n 'diego.rodriguez@regnology.net:Frankfurt#60486' | base64)"'''
+#curl -X GET "https://datamanagementDiego/airflow/api/v1/dags" \
+#-H "Authorization: Basic $(echo -n 'datamanagementDiego.net:Frsssdaassasd' | base64)"'''
 
 #to get the taskinstances
-#https://acceptance.b-fine.be/airflow/api/v1/dags/ANACREDIT-ICR_BECRIS-ICR-NEW/dagRuns/manual__2024-09-10T07:09:04.965432+00:00/taskInstances
+#https://datamanagementDiego/airflow/api/v1/dags/ANACREDIT-ICR_BECRIS-ICR-NEW/dagRuns/manual__2024-09-10T07:09:04.965432+00:00/taskInstances
 
 #to get the lots
 
-# curl -X GET "https://acceptance.b-fine.be/airflow/api/v1/dags/ANACREDIT-ICR_BECRIS-ICR-NEW/dagRuns/manual__2024-09-10T07:09:04.965432+00:00/taskInstances" -H "Authorization: Basic $(echo -n 'diego.rodriguez@regnology.net:Frankfurt#60486' | base64)"
+# curl -X GET "https://datamanagementDiego/airflow/api/v1/dags/ANACREDIT-ICR_BECRIS-ICR-NEW/dagRuns/manual__2024-09-10T07:09:04.965432+00:00/taskInstances" -H "Authorization: Basic $(echo -n 'datamanagementDiego.net:datamanagementDiego' | base64)"
 
-#curl -X GET "https://acceptance.b-fine.be/airflow/api/v1/dags/ANACREDIT-ICR_BECRIS-ICR-NEW" -H "Authorization: Basic $(echo -n 'diego.rodriguez@regnology.net:Frankfurt#60486' | base64)"
+#curl -X GET "https://datamanagementDiego/airflow/api/v1/dags/ANACREDIT-ICR_BECRIS-ICR-NEW" -H "Authorization: Basic $(echo -n 'datamanagementDiego.net:datamanagementDiego' | base64)"
 
- #curl -X GET "https://acceptance.b-fine.be/airflow/api/v1/dags/ANACREDIT-ICR_BECRIS-ICR-NEW/dagRuns/manual__2024-09-10T07:09:04.965432+00:00/taskInstances/update_lot" -H "Authorization: Basic $(echo -n 'diego.rodriguez@regnology.net:Frankfurt#60486' | base64)"  
+ #curl -X GET "https://datamanagementDiego/airflow/api/v1/dags/ANACREDIT-ICR_BECRIS-ICR-NEW/dagRuns/manual__2024-09-10T07:09:04.965432+00:00/taskInstances/update_lot" -H "Authorization: Basic $(echo -n 'datamanagementDiego.net:datamanagementDiego' | base64)"  
 
 '''
 import requests
 from requests.auth import HTTPBasicAuth
 
 # Define the Airflow server URL and endpoint to trigger a DAG run
-airflow_url = "https://acceptance.b-fine.be/airflow/api/v1/dags/ANACREDIT-ICR_BECRIS-ICR-NEW/dagRuns"
+airflow_url = "https://datamanagementDiego/airflow/api/v1/dags/ANACREDIT-ICR_BECRIS-ICR-NEW/dagRuns"
 
 # Replace with your Airflow username and password
-username = "diego.rodriguez@regnology.net"
-password = "Frankfurt#60486"
+username = "datamanagementDiego.net"
+password = "datamanagementDiego"
 
 # Basic authentication setup
 auth = HTTPBasicAuth(username, password)
@@ -62,7 +62,7 @@ headers = {
 payload = {
     "conf": {
         # Add any parameters you want to pass to the DAG run
-        "email": "diego.rodriguez@regnology.net",
+        "email": "datamanagementDiego.net",
         "entity": "B-Fine",
         "lot": 1,
         "reporting_date": "2024-08-23",

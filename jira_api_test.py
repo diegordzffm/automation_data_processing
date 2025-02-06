@@ -7,9 +7,9 @@ import base64
 
 url='"https://jira.regnology.net/',
 
-    username='diego.rodriguez@regnology.net',
+    username='datamanagementDiego.net',
 
-    password='NzUwMTI4MTg4OTYzOiZFffdb7Zvdc/0RCgjUs06zPuyv'
+    password='NzUwxxxxxxxxxxxxuyv'
 
 
 #jql_request ='project = WSP AND issuetype = Story'
@@ -17,8 +17,8 @@ url='"https://jira.regnology.net/',
 # '"epic link" = WSP-144'
 
 
-'''JIRA_URL = "https://jira.regnology.net/"
-JIRA_EMAIL = "diego.rodriguez@regnology.net"
-JIRA_API_TOKEN = "NzUwMTI4MTg4OTYzOiZFffdb7Zvdc/0RCgjUs06zPuyv"
+'''JIRA_URL = "https:xxxxxxxxx.net/"
+JIRA_EMAIL = "datamanagementDiego.net"
+JIRA_API_TOKEN = "NzUxxxxxxRCgjUs06zPuyv"
 PROJECT_KEY = "RRH"
 REPOSITORY_NAME = "BECRIS_ICR"  # The name of the Test Repository'''
