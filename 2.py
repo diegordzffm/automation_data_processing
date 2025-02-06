@@ -2,9 +2,9 @@ import subprocess
 import json
 
 # Define the URL and credentials
-url = "https://jira.regnology.net/rest/api/2/search"
-username = "diego.rodriguez@regnology.net"  # Replace with your JIRA username or email
-api_token = "OTI3MzM4MjU5MzcyOq7jc8xGcgQXJsLYs6N8y66i7ESq"  # Replace with your JIRA API token
+url = "https://datamanagementDiego/rest/api/2/search"
+username = "datamanagementDiego.net"  # Replace with your JIRA username or email
+api_token = "OTdatamanagementDiegos6N8y66i7ESq"  # Replace with your JIRA API token
 
 # Construct the curl command
 curl_command = [
