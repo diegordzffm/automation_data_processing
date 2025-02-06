@@ -10,7 +10,7 @@ JIRA_URL = "https://jira.dxxxxxxxxxxxxxxxxxxx.net/rest/api/2/search"
 JIRA_EMAIL = "ddxxxxxxxxxxxxxxxxxxx"
 JIRA_USERNAME = "dxxxxxxxxxxxxxxxxxxx"
 JIRA_PASSWORD = "dxxxxxxxxxxxxxxxxxxx#dxxxxxxxxxxxxxxxxxxx"
-JIRA_API_TOKEN = "dxxxxxxxxxxxxxxxxxxx/dxxxxxxxxxxxxxxxxxxx"
+JIRA_API_TOKEN = "dxxxxxxxxxxxxxxxxxxx/dxxxxxxxxxxxxxxxxxxxx"
 
 try:
     jira = JIRA(JIRA_URL, auth = HTTPBasicAuth(jira_username, JIRA_API_TOKEN))

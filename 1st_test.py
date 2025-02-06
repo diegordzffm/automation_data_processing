@@ -26,7 +26,7 @@ def run(playwright: Playwright) -> None:
     browser = playwright.chromium.launch(headless=False)#can be used in headless mode, with true
     context = browser.new_context() #a browser contest is an isolated incognito-alike session within a browser instance
     page = context.new_page()
-    page.goto("https://acceptance.b-fine.be/")
+    page.goto("https://adatamanagement.be/")
     page.get_by_placeholder("Enter your email address").click()
     page.get_by_placeholder("Enter your email address").fill("admin@regnology.net")
     page.get_by_placeholder("Enter your password").click()
